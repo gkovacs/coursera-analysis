@@ -1,0 +1,15 @@
+*.sqlite
+*.pickle
+.DS_Store
+.ipynb_checkpoints/
+datastage_login.json
+*.pyc
+*.sqlite_*.json
+*.aux
+*.pdf
+*.idx
+*.log
+*.out
+*.tex
+*_files/
+*_clickstream.gz
