@@ -1,5 +1,5 @@
 #!/usr/bin/env python
-# md5: d1d170ed6a50850ef6a53566e7eaf591
+# md5: 3ef1541769f98a2f70fb1a4de4000c63
 # coding: utf-8
 
 def timeToSeconds(timestr):
@@ -287,7 +287,7 @@ video_lengths_ml_003_human_readable = {
   95: "12:17",
   96: "13:45",
   97: "14:03",
-  98: "07.54",
+  98: "07:54",
   99: "14:31",
   100: "10:14",
   101: "08:26",
