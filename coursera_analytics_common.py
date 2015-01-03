@@ -1,5 +1,5 @@
 #!/usr/bin/env python
-# md5: e6d5de2337898da3b5690203d904accd
+# md5: 4f07f24f0fed0fe7080aee89d3e06e49
 # coding: utf-8
 
 try:
@@ -581,6 +581,10 @@ def parseOptions(options, lst):
 def incrementPartsSkippedForwardOver(seek_chain, output):
   if seek_chain.direction != 'forward':
     return
+  if not 0 <= int(round(seek_chain.end)) < len(output):
+    return
+  if not 0 <= int(round(seek_chain.start)) < len(output):
+    return
   for i in range(int(round(seek_chain.start)), int(round(seek_chain.end))):
     if not 0 <= i < len(output):
       continue
@@ -641,6 +645,10 @@ def getPartsSkippedForwardOver(lecture_id, **kwargs):
 def incrementPartsSkippedBackOver(seek_chain, output):
   if seek_chain.direction != 'back':
     return
+  if not 0 <= int(round(seek_chain.end)) < len(output):
+    return
+  if not 0 <= int(round(seek_chain.start)) < len(output):
+    return
   for i in range(int(round(seek_chain.end)), int(round(seek_chain.start))):
     if not 0 <= i < len(output):
       continue
@@ -694,6 +702,10 @@ def getPartsSkippedBackOver(lecture_id, **kwargs):
 
 def incrementPartsPlayed(play_span, output):
   assert play_span.end >= play_span.start, 'play span end is ' + str(play_span.end) + ' while start is ' + str(play_span.start)
+  if not 0 <= int(round(play_span.end)) < len(output):
+    return
+  if not 0 <= int(round(play_span.start)) < len(output):
+    return
   for i in range(int(round(play_span.start)), int(round(play_span.end))):
     if not 0 <= i < len(output):
       continue
