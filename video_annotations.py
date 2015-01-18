@@ -1,5 +1,5 @@
 #!/usr/bin/env python
-# md5: 1380e7c85a2cb8adf14609d9c7b2f494
+# md5: 348d8f83082070022f33fffaa3a9cc19
 # coding: utf-8
 
 def timeToSeconds(timestr):
@@ -143,7 +143,7 @@ slide_transitions_ml_004_human_readable = {
 7: ["0:12", "1:34"],
 8: ["0:31", "0:49", "1:57", "2:39", "3:24"],
 11: ["0:41", "2:13", "5:16"],
-10: ["0:!5", "1:19", "5:39", "9:06"],
+10: ["0:15", "1:19", "5:39", "9:06"],
 9: ["0:23", "0:59", "3:24", "4:33", "4:51", "5:34", "7:47"],
 12: ["0:11", "2:46", "4:52"],
 13: ["0:12", "4:57"],
@@ -300,7 +300,7 @@ in_video_quiz_times_ml_004_human_readable = {
   47: ["6:15"],
   48: ["2:31"],
   49: ["3:31"],
-  50: ["6:43"],
+  50: ["6:32"],
   51: ["11:27"],
   52: ["12:11"],
   53: ["3:48"],
@@ -576,12 +576,23 @@ video_lengths_ml_004 = { k: timeToSeconds(v) for k,v in video_lengths_ml_004_hum
 video_lengths_crypto_009 = { k: timeToSeconds(v) for k,v in video_lengths_crypto_009_human_readable.iteritems() }
 video_lengths_ml_003 = { k: timeToSeconds(v) for k,v in video_lengths_ml_003_human_readable.iteritems() }
 in_video_quiz_times_ml_004 = { k: [timeToSeconds(x) for x in v] for k,v in in_video_quiz_times_ml_004_human_readable.iteritems() }
+slide_transitions_ml_004 = { k: [timeToSeconds(x) for x in v] for k,v in slide_transitions_ml_004_human_readable.iteritems() }
 slides_ml_004 = { k: [TRange(x,y) for x,y in v] for k,v in slides_ml_004_human_readable.iteritems() }
 talking_heads_ml_004 = { k: [TRange(x,y) for x,y in v] for k,v in talking_heads_ml_004_human_readable.iteritems() }
 
 
 
 
+
+
+
+from jsobj import Object
+
+ml_004 = Object({
+  "slide_transitions": slide_transitions_ml_004,
+  "in_video_quiz_times": in_video_quiz_times_ml_004,
+  "video_lengths": video_lengths_ml_004,
+})
 
 
 
