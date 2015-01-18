@@ -1,10 +1,10 @@
 #!/usr/bin/env python
-# md5: 47cbeec79c2fc7f3fa366f9a2db13a58
+# md5: 41de9eb0d2b200ec06ac6f32cc6b3859
 # coding: utf-8
 
 class OneIndexedArray(object):
   def __init__(self, data):
-    self.__array__ = [None] + data
+    self.__array__ = [0] + data
   def __len__(self):
     return len(self.__array__) - 1
   def __getitem__(self, i):
