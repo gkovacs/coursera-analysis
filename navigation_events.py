@@ -1,6 +1,8 @@
 #!/usr/bin/env python
-# md5: 44b41b92a30cb66d70f4abf9280aadd6
+# md5: 638016ae456fd5cb1e0a0b8e6c5bfb8d
 # coding: utf-8
+
+import json
 
 class SeekEvent:
   def __init__(self, timestamp, start, end, paused):
@@ -14,7 +16,7 @@ class SeekEvent:
     else:
       self.direction = 'back'
   def __str__(self):
-    return dumps(self.__dict__)
+    return json.dumps(self.__dict__)
   def __repr__(self):
     return str(self)
 
@@ -32,9 +34,11 @@ class SeekChain:
     self.timestamp = seek_events[0].timestamp
     self.timestamp_end = seek_events[-1].timestamp
   def __str__(self):
-    output = self.__dict__
+    output = {}
+    for k,v in self.__dict__.items():
+      output[k] = v
     output['seek_events'] = [x.__dict__ for x in output['seek_events']]
-    return dumps(output)
+    return json.dumps(output)
   def __repr__(self):
     return str(self)
 
