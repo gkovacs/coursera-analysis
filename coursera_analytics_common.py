@@ -1,5 +1,5 @@
 #!/usr/bin/env python
-# md5: 4f07f24f0fed0fe7080aee89d3e06e49
+# md5: 84f271210ebb328042f2f929c27e37c0
 # coding: utf-8
 
 try:
@@ -18,6 +18,7 @@ from memoized import memoized
 import video_annotations
 reload(video_annotations)
 import video_annotations
+from video_annotations import ml_004 as vid
 
 from json import loads, dumps
 
@@ -33,8 +34,9 @@ from memoized import memoized
 
 databases = {}
 
+from get_database_name import *
+
 #databasename = 'ml-004_clickstream_video.sqlite'
-databasename = 'ml-004_clickstream_video.sqlite'
 tablename = 'videos'
 
 def listVideosReal(dbname):
@@ -48,19 +50,16 @@ def listVideosReal(dbname):
 
 @memoized
 def listVideosJsonMemoized(dbname):
-  jsonfile = dbname + '_videolist.pickle'
+  jsonfile = dbname + '_videolist.json'
   if not os.path.exists(jsonfile):
-    pickle.dump(listVideosReal(dbname), open(jsonfile, 'w'))
-  return pickle.load(open(jsonfile))
+    json.dump(listVideosReal(dbname), open(jsonfile, 'w'))
+  return json.load(open(jsonfile))
 
 def listVideos():
   return listVideosJsonMemoized(getDatabaseName())
 
 def getTableName():
   return tablename
-
-def getDatabaseName():
-  return databasename
 
 def getDatabasePath():
   return '/lfs/local/0/geza/' + databasename
@@ -213,12 +212,21 @@ def getLecturesToViewersReal(dbname):
     output[lectureid] = getUsersWhoWatchedLecture(lectureid)
   return output
 
+'''
 @memoized
 def getLecturesToViewersJsonMemoized(dbname):
   jsonfile = dbname + '_lecturestoviewers.pickle'
   if not os.path.exists(jsonfile):
     pickle.dump(getLecturesToViewersReal(dbname), open(jsonfile, 'w'))
   return pickle.load(open(jsonfile))
+'''
+
+@memoized
+def getLecturesToViewersJsonMemoized(dbname):
+  jsonfile = dbname + '_lecturestoviewers.json'
+  if not os.path.exists(jsonfile):
+    json.dump(getLecturesToViewersReal(dbname), open(jsonfile, 'w'))
+  return json.load(open(jsonfile))
 
 def getLecturesToViewers():
   return getLecturesToViewersJsonMemoized(getDatabaseName())
@@ -233,12 +241,21 @@ def getViewersToLecturesReal(dbname):
         output[user].append(lectureid)
   return output
 
+'''
 @memoized
 def getViewersToLecturesJsonMemoized(dbname):
   jsonfile = dbname + '_viewerstolectures.pickle'
   if not os.path.exists(jsonfile):
     pickle.dump(getViewersToLecturesReal(dbname), open(jsonfile, 'w'))
   return pickle.load(open(jsonfile))
+'''
+
+@memoized
+def getViewersToLecturesJsonMemoized(dbname):
+  jsonfile = dbname + '_viewerstolectures.json'
+  if not os.path.exists(jsonfile):
+    json.dump(getViewersToLecturesReal(dbname), open(jsonfile, 'w'))
+  return json.load(open(jsonfile))
 
 def getViewersToLectures():
   return getViewersToLecturesJsonMemoized(getDatabaseName())
@@ -262,89 +279,11 @@ def getViewersWhoWatchedMostLecturesSetReal(dbname):
 def getViewersWhoWatchedMostLecturesSet():
   return getViewersWhoWatchedMostLecturesSetReal(getDatabaseName())
 
-print len(getViewersToLectures().keys())
-print len(getViewersWhoWatchedMostLectures())
+#print len(getViewersToLectures().keys())
+#print len(getViewersWhoWatchedMostLectures())
 
 
-class SeekEvent:
-  def __init__(self, timestamp, start, end, paused):
-    self.timestamp = timestamp
-    self.start = start
-    self.end = end
-    self.event_type = 'seeked'
-    self.paused = bool(paused)
-    if self.end >= self.start:
-      self.direction = 'forward'
-    else:
-      self.direction = 'back'
-  def __str__(self):
-    return dumps(self.__dict__)
-  def __repr__(self):
-    return str(self)
-
-class SeekChain:
-  def __init__(self, seek_events):
-    assert len(seek_events) > 0
-    self.seek_events = seek_events
-    self.start = seek_events[0].start
-    self.end = seek_events[-1].end
-    self.event_type = 'seek_chain'
-    if self.end >= self.start:
-      self.direction = 'forward'
-    else:
-      self.direction = 'back'
-    self.timestamp = seek_events[0].timestamp
-    self.timestamp_end = seek_events[-1].timestamp
-  def __str__(self):
-    output = self.__dict__
-    output['seek_events'] = [x.__dict__ for x in output['seek_events']]
-    return dumps(output)
-  def __repr__(self):
-    return str(self)
-
-class PlayEvent:
-  def __init__(self, timestamp, start, playback_rate):
-    self.timestamp = timestamp
-    self.start = start
-    self.playback_rate = playback_rate
-    self.event_type = 'play'
-
-class PlaySpan:
-  def __init__(self, timestamp, timestamp_end, start, end, playback_rate):
-    self.timestamp = timestamp
-    self.timestamp_end = timestamp_end
-    self.start = start
-    self.end = end
-    self.playback_rate = playback_rate
-    self.event_type = 'play_span'
-    if self.timestamp == None:
-      raise DataException('PlaySpan timestamp cannot be None')
-    if self.timestamp_end == None:
-      raise DataException('PlaySpan timestamp_end cannot be None')
-    if self.start == None:
-      raise DataException('PlaySpan start cannot be None')
-    if self.end == None:
-      raise DataException('PlaySpan end cannot be None')
-    if self.playback_rate == None:
-      raise DataException('PlaySpan playback_rate cannot be None')
-  def __str__(self):
-    return '(' + str(self.start) + ', ' + str(self.end) + ')'
-  def __repr__(self):
-    return self.__str__()
-
-class PauseEvent:
-  def __init__(self, timestamp, start):
-    self.timestamp = timestamp
-    self.start = start
-    self.event_type = 'pause'
-
-class RateChangeEvent:
-  def __init__(self, timestamp, start, playback_rate, paused):
-    self.timestamp = timestamp
-    self.start = start
-    self.playback_rate = playback_rate
-    self.event_type = 'ratechange'
-    self.paused = bool(paused)
+from navigation_events import *
 
 from math import isnan
 
@@ -518,29 +457,6 @@ def groupEventsAsPlaySpans(all_events):
       assert False, 'unexpected event type in groupEventsAsPlaySpans: ' + event.event_type
   return output
 
-def groupSeekEventsAsSeekChains(seek_events):
-  output = []
-  prev_seek_timestamp = None
-  current_seek_chain = []
-  for seek_event in seek_events:
-    if prev_seek_timestamp == None:
-      prev_seek_timestamp = seek_event.timestamp
-      current_seek_chain.append(seek_event)
-    else:
-      if seek_event.timestamp - prev_seek_timestamp > 5000: # has been at least 5 seconds since last seek, create new seek chain
-        if len(current_seek_chain) > 0:
-          output.append(SeekChain(current_seek_chain))
-          current_seek_chain = []
-        current_seek_chain.append(seek_event)
-        prev_seek_timestamp = seek_event.timestamp
-      else: # existing seek chain
-        current_seek_chain.append(seek_event)
-        prev_seek_timestamp = seek_event.timestamp
-  if len(current_seek_chain) > 0:
-    output.append(SeekChain(current_seek_chain))
-    current_seek_chain = []
-  return output
-
 '''
 #frame = getFrameForLectureUser(1, 'abcea9860ecfb2fef5140bc9e504f529ed33eb39')
 #print frame.sort('event_timestamp')
@@ -565,18 +481,7 @@ for user in getViewersToLectures().keys():
 '''
 
 
-def parseOptions(options, lst):
-  if options == None:
-    return tuple([None for x in lst])
-  for key in options:
-    assert key in lst, 'provided option ' + str(key) + ' is not in acceptable options ' + str(lst)
-  output = []
-  for x in lst:
-    if x in options:
-      output.append(options[x])
-    else:
-      output.append(None)
-  return tuple(output)
+from coursera_lib_common import parseOptions
 
 def incrementPartsSkippedForwardOver(seek_chain, output):
   if seek_chain.direction != 'forward':
@@ -932,9 +837,33 @@ def getPartsPlayed(lecture_id, **kwargs):
 '''
 
 
+def groupSeekEventsAsSeekChains(seek_events):
+  output = []
+  prev_seek_timestamp = None
+  current_seek_chain = []
+  for seek_event in seek_events:
+    if prev_seek_timestamp == None:
+      prev_seek_timestamp = seek_event.timestamp
+      current_seek_chain.append(seek_event)
+    else:
+      if seek_event.timestamp - prev_seek_timestamp > 5000: # has been at least 5 seconds since last seek, create new seek chain
+        if len(current_seek_chain) > 0:
+          output.append(SeekChain(current_seek_chain))
+          current_seek_chain = []
+        current_seek_chain.append(seek_event)
+        prev_seek_timestamp = seek_event.timestamp
+      else: # existing seek chain
+        current_seek_chain.append(seek_event)
+        prev_seek_timestamp = seek_event.timestamp
+  if len(current_seek_chain) > 0:
+    output.append(SeekChain(current_seek_chain))
+    current_seek_chain = []
+  return output
+
 def getSeekChains(lecture_id, **kwargs):
   skipped_users,successful_users,user_whitelist = parseOptions(kwargs, ['skipped_users', 'successful_users', 'user_whitelist'])
-  lecture_length = getLectureLength(lecture_id)
+  #lecture_length = getLectureLength(lecture_id)
+  lecture_length = vid.video_lengths[lecture_id]
   output = []
   for user in getViewersToLectures().keys():
     frame = getFrameForLectureUser(lecture_id, user)

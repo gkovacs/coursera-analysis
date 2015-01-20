@@ -1,5 +1,5 @@
 #!/usr/bin/env python
-# md5: 330fd6686a99f52ec67f2f6c986a1922
+# md5: b3841edbb6def810ac925fc6d3c7d8d7
 # coding: utf-8
 
 from coursera_analytics_common import *
@@ -112,6 +112,12 @@ else:
 
 import cPickle as pickle
 
+for lecture_id in listVideos():
+  print lecture_id
+  seek_chains = getSeekChains(lecture_id)
+  pickle.dump(seek_chains, open('seek_chains_' + str(lecture_id) +'.pickle', 'w'))
+
+'''
 video_to_seek_chains = {}
 
 count = 0
@@ -119,7 +125,8 @@ if os.path.exists('video_to_seek_chains.pickle'):
   video_to_seek_chains = pickle.load(open('video_to_seek_chains.pickle'))
 else:
   for lecture_id in listVideos():
+    print lecture_id
     video_to_seek_chains[lecture_id] = getSeekChains(lecture_id)
   pickle.dump(video_to_seek_chains, open('video_to_seek_chains.pickle', 'w'))
-    
+'''    
 

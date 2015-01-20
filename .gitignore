@@ -13,3 +13,4 @@ datastage_login.json
 *.tex
 *_files/
 *_clickstream.gz
+seek_chains_*.json
