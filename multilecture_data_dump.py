@@ -1,5 +1,5 @@
 #!/usr/bin/env python
-# md5: 5b9473a556c4d0f5b9a806953ac1e124
+# md5: ba0e242d80fb98106e855dd2c44efc48
 # coding: utf-8
 
 from coursera_analytics_common import *
@@ -78,7 +78,7 @@ else:
     skipped_users = set()
     successful_users = set()
     dataforvid = getPartsSkippedBackOver(videonumber, skipped_users=skipped_users, successful_users=successful_users)
-    video_to_parts_skipped_forward_over[videonumber] = dataforvid
+    video_to_parts_skipped_back_over[videonumber] = dataforvid
     print 'finished processing video ' + str(videonumber) + ' errors: ' + str(getNumDataExceptions()) + ' skipped: ' + str(len(skipped_users)) + ' successful: ' + str(len(successful_users))
   print 'making json dump'
   json.dump(video_to_parts_skipped_back_over, open('video_to_parts_skipped_back_over.json', 'w'))
@@ -107,5 +107,28 @@ else:
             video_to_user_to_startzero_events[lecture_id][user] = []
           video_to_user_to_startzero_events[lecture_id][user].append(event.timestamp)
   json.dump(video_to_user_to_startzero_events, open('video_to_user_to_startzero_events.json', 'w'))
+    
+
+
+import cPickle as pickle
+
+video_to_user_to_seek_chains = {}
+
+count = 0
+if os.path.exists('video_to_user_to_seek_chains.pickle'):
+  video_to_user_to_seek_chains = pickle.load(open('video_to_user_to_seek_chains.pickle'))
+else:
+  for lecture_id in listVideos():
+    video_to_user_to_seek_chains[lecture_id] = {}
+  for user,lectures in getViewersToLectures().iteritems():
+    for lecture_id in lectures:
+      try:
+        seek_chains = getSeekChains(lecture_id, user)
+        if seek_chains == None:
+          continue
+      except DataException as e:
+        continue
+      video_to_user_To_seek_chains[lecture_id][user] = seek_chains
+  pickle.dump(video_to_user_to_startzero_events, open('video_to_user_to_startzero_events.pickle', 'w'))
     
 
