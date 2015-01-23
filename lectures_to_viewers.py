@@ -1,5 +1,5 @@
 #!/usr/bin/env python
-# md5: d2e5c6308304a98f68de8dac5eaba167
+# md5: 32805c20c00faf98300ce45648f2dec6
 # coding: utf-8
 
 import json
@@ -28,4 +28,7 @@ def getLecturesToViewersJsonMemoized(dbname):
 
 def getLecturesToViewers():
   return getLecturesToViewersJsonMemoized(getDatabaseName())
+
+def getViewersForLecture(lecture_id):
+  return getLecturesToViewers()[str(lecture_id)]
 
