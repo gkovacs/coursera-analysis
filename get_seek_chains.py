@@ -1,5 +1,5 @@
 #!/usr/bin/env python
-# md5: 7f9f4de77b80e0e0316d053e1fb5ddbc
+# md5: c0bd9cd599f0d5553e41d52ebefa3ad8
 # coding: utf-8
 
 from memoized import memoized
@@ -19,5 +19,5 @@ def getPartsPlayedFast(lecture_id):
   jfile = 'video_to_parts_played.json'
   if not os.path.exists(jfile):
     raise 'file does not exist: ' + jfile
-  return json.load(open(jfile))
+  return json.load(open(jfile))[str(lecture_id)]
 

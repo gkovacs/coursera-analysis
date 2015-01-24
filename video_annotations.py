@@ -1,5 +1,5 @@
 #!/usr/bin/env python
-# md5: 348d8f83082070022f33fffaa3a9cc19
+# md5: 5cb8e78a1857de8bc7ae878c55cf2356
 # coding: utf-8
 
 def timeToSeconds(timestr):
@@ -348,7 +348,7 @@ in_video_quiz_times_ml_004_human_readable = {
   97: ["13:43"],
   98: ["7:44"],
   99: ["6:13"],
-  100: ["7:07"],
+  100: ["4:36", "7:07"],
   101: ["8:06"],
   102: ["5:11"],
   103: ["8:18"],
