@@ -1,0 +1,311 @@
+id,parent_id,open_time,soft_close_time,hard_close_time,maximum_submissions,"title",duration,"quiz_type","proctoring_requirement",authentication_required,deleted,last_updated
+1,-1,15811260,2147483647,2147483647,10,"Welcome (7 min)",3600,"video","none",1,0,1366491375
+2,-1,1337072460,1338278340,1338883140,3,"What is Machine Learning? (7 min)",0,"video","none",1,0,1367894429
+3,-1,1337072460,1338278340,1338883140,3,"Supervised Learning (12 min)",0,"video","none",1,0,1366491375
+4,-1,1342515660,1343721540,1344326340,3,"Unsupervised Learning (14 min)",0,"video","none",1,0,1366491375
+5,-1,1337072460,1338278340,1338883140,3,"Model Representation (8 min)",0,"video","none",1,0,1366491375
+6,-1,1337072460,1338278340,1338883140,3,"Cost Function (8 min)",0,"video","none",1,0,1366491375
+7,-1,1337068800,1338278340,1338883140,3,"Cost Function - Intuition I (11 min)",0,"video","none",1,0,1366491375
+8,-1,15811200,2147483647,2147483647,10,"Cost Function - Intuition II (9 min)",3600,"video","none",1,0,1366491375
+9,-1,1337072460,1338278340,1338883140,3,"Gradient Descent For Linear Regression (10 min)",0,"video","none",1,0,1366491375
+10,-1,1337072460,1338278340,1338883140,3,"Gradient Descent Intuition (12 min)",0,"video","none",1,0,1366491375
+11,-1,1337068800,1338278340,1338883140,3,"Gradient Descent (11 min)",0,"video","none",1,0,1366491375
+12,-1,15811260,2147483647,2147483647,10,"What's Next (6 min)",3600,"video","none",1,0,1366491375
+13,-1,NULL,1327366260,1328575860,10,"New Quiz",3600,"quiz","none",1,1,1366491375
+14,-1,0,1327910399,1328515199,0,"I. Introduction",0,"quiz","none",1,1,1366491375
+15,-1,NULL,1327910399,1328515199,100,"I. Introduction",0,"quiz","none",1,1,1366491375
+16,-1,1381762800,1383551940,1389599940,100,"I. Introduction",0,"quiz","none",1,0,1382979708
+17,-1,1381762800,1383551940,1389599940,100,"II. Linear regression with one variable",0,"quiz","none",1,0,1382979723
+18,-1,1320134460,1320742860,1320742860,100,"I. Introduction -- Amaas Test",0,"quiz","none",1,1,1366491376
+19,-1,NULL,1334559600,1334645999,100,"II. Linear regression with one variable",0,"quiz","none",1,1,1366491376
+20,-1,1381762800,1383551940,1389599940,100,"III. Linear Algebra",0,"quiz","none",1,0,1382979788
+21,-1,10368000,2147483647,2147483647,0,"Matrices and Vectors (9 min)",0,"video","none",1,0,1366491376
+22,-1,10368000,2147483647,2147483647,0,"Addition and Scalar Multiplication (7 min)",0,"video","none",1,0,1366491376
+23,-1,10368000,2147483647,2147483647,0,"Matrix Vector Multiplication (14 min)",0,"video","none",1,0,1366491376
+24,-1,10368000,2147483647,2147483647,0,"Matrix Matrix Multiplication (11 min)",0,"video","none",1,0,1366491376
+25,-1,10368000,2147483647,2147483647,0,"Matrix Multiplication Properties (9 min)",0,"video","none",1,0,1366491376
+26,-1,10368000,2147483647,2147483647,0,"Inverse and Transpose (11 min)",0,"video","none",1,0,1366491376
+27,-1,10368000,2147483640,2147483640,0,"Multiple Features (8 min)",0,"video","none",1,0,1384278897
+28,-1,10368000,2147483647,2147483647,0,"Gradient Descent for Multiple Variables (5 min)",0,"video","none",1,0,1366491376
+29,-1,10368000,2147483647,2147483647,0,"Gradient Descent in Practice I - Feature Scaling (9 min)",0,"video","none",1,0,1366491376
+30,-1,10368000,2147483647,2147483647,0,"Gradient Descent in Practice II - Learning Rate (9 min)",0,"video","none",1,0,1366491376
+31,-1,10368000,2147483647,2147483647,0,"Features and Polynomial Regression (8 min)",0,"video","none",1,0,1366491376
+32,-1,10368000,2147483647,2147483647,0,"Normal Equation (16 min)",0,"video","none",1,0,1366491376
+33,-1,10368000,2147483647,2147483647,0,"Normal Equation Noninvertibility (Optional) (6 min)",0,"video","none",1,0,1366491376
+34,-1,10368000,2147483647,2147483647,0,"Basic Operations (14 min)",0,"video","none",1,0,1366491376
+35,-1,10368000,2147483647,2147483647,0,"Moving Data Around (16 min)",0,"video","none",1,0,1366491376
+36,-1,10368000,2147483647,2147483647,0,"Computing on Data (13 min)",0,"video","none",1,0,1366491376
+37,-1,10368000,2147483647,2147483647,0,"Plotting Data (10 min)",0,"video","none",1,0,1366491376
+38,-1,10368000,2147483647,2147483647,0,"Vectorization (14 min)",0,"video","none",1,0,1366491376
+39,-1,10368000,2147483647,2147483647,0,"Control Statements: for, while, if statements (13 min)",0,"video","none",1,0,1366491376
+40,-1,10368000,2147483647,2147483647,0,"Working on and Submitting Programming Exercises (4 min)",0,"video","none",1,0,1366491377
+41,-1,10368000,2147483647,2147483647,0,"Classification (8 min)",0,"video","none",1,0,1366491377
+42,-1,10368000,2147483647,2147483647,0,"Hypothesis Representation (7 min)",0,"video","none",1,0,1366491377
+43,-1,10368000,2147483647,2147483647,0,"Decision Boundary (15 min)",0,"video","none",1,0,1366491377
+44,-1,10368000,2147483647,2147483647,0,"Simplified Cost Function and Gradient Descent (10 min)",0,"video","none",1,0,1366491377
+45,-1,10368000,2147483647,2147483647,0,"Advanced Optimization (14 min)",0,"video","none",1,0,1366491377
+46,-1,10368000,2147483647,2147483647,0,"Multiclass Classification: One-vs-all (6 min)",0,"video","none",1,0,1366491377
+47,-1,10368000,2147483647,2147483647,0,"The Problem of Overfitting (10 min)",0,"video","none",1,0,1366491377
+48,-1,10368000,2147483647,2147483647,0,"Cost Function (10 min)",0,"video","none",1,0,1366491377
+49,-1,10368000,2147483647,2147483647,0,"Regularized Linear Regression (11 min)",0,"video","none",1,0,1366491377
+50,-1,10368000,2147483647,2147483647,0,"Regularized Logistic Regression (9 min)",0,"video","none",1,0,1366491377
+51,-1,10368000,2147483647,2147483647,0,"Non-linear Hypotheses (10 min)",0,"video","none",1,0,1366491377
+52,-1,10368000,2147483647,2147483647,0,"Neurons and the Brain (8 min)",0,"video","none",1,0,1366491377
+53,-1,10368000,2147483647,2147483647,0,"Model Representation I (12 min)",0,"video","none",1,0,1366491377
+54,-1,10368000,2147483640,2147483640,0,"Model Representation II (12 min)",0,"video","none",1,0,1384813222
+55,-1,10368000,2147483647,2147483647,0,"Examples and Intuitions I (7 min)",0,"video","none",1,0,1366491377
+56,-1,10368000,2147483647,2147483647,0,"Examples and Intuitions II (10 min)",0,"video","none",1,0,1366491377
+57,-1,10368000,2147483647,2147483647,0,"Multiclass Classification (4 min)",0,"video","none",1,0,1366491377
+58,-1,10368000,2147483647,2147483647,0,"Cost Function (7 min)",0,"video","none",1,0,1366491377
+59,-1,10368000,2147483647,2147483647,0,"Backpropagation Algorithm (12 min)",0,"video","none",1,0,1366491377
+60,-1,0,2147483640,2147483640,0,"Backpropagation Intuition (13 min)",0,"video","none",1,0,1366491377
+61,-1,10368000,2147483647,2147483647,0,"Implementation Note: Unrolling Parameters (8 min)",0,"video","none",1,0,1366491377
+62,-1,10368000,2147483647,2147483647,0,"Gradient Checking (12 min)",0,"video","none",1,0,1366491377
+63,-1,10368000,2147483647,2147483647,0,"Random Initialization (7 min)",0,"video","none",1,0,1366491377
+64,-1,10368000,2147483647,2147483647,0,"Putting It Together (14 min)",0,"video","none",1,0,1366491377
+65,-1,10368000,2147483647,2147483647,0,"Autonomous Driving (7 min)",0,"video","none",1,0,1366491377
+66,-1,NULL,1320739200,1320739200,100,"III. Linear Algebra",0,"quiz","none",1,1,1366491377
+67,-1,1381762800,1384156740,1389599940,100,"IV. Linear Regression with Multiple Variables",0,"quiz","none",1,0,1383950035
+68,-1,1381762800,1384156740,1389599940,100,"V. Octave Tutorial",0,"quiz","none",1,0,1382979836
+69,-1,1383552000,1384761540,1389599940,100,"VI. Logistic Regression",0,"quiz","none",1,0,1382979856
+70,-1,1383552000,1384761540,1389599940,100,"VII. Regularization",0,"quiz","none",1,0,1382979866
+71,-1,1384156800,1385366340,1389599940,100,"VIII. Neural Networks: Representation",0,"quiz","none",1,0,1382979958
+72,-1,10368000,2147483647,2147483647,0,"Cost Function (11 min)",0,"video","none",1,0,1366491378
+73,-1,1334960101,1335564901,1336774501,100,"New Quiz",0,"quiz","none",1,1,1366491378
+74,-1,1334960160,1335564960,1336774560,100,"New asdfasdfasdfas",0,"homework","none",1,1,1366491378
+75,-1,1384761600,1385971140,1389599940,100,"IX. Neural Networks: Learning",0,"quiz","none",1,0,1382979978
+76,-1,10368000,2147483647,2147483647,0,"Deciding What to Try Next (6 min)",0,"video","none",1,0,1366491378
+77,-1,10368000,2147483647,2147483647,0,"Evaluating a Hypothesis (8 min)",0,"video","none",1,0,1366491378
+78,-1,10368000,2147483647,2147483647,0,"Model Selection and Train/Validation/Test Sets (12 min)",0,"video","none",1,0,1366491378
+79,-1,10368000,2147483647,2147483647,0,"Diagnosing Bias vs. Variance (8 min)",0,"video","none",1,0,1366491378
+80,-1,10368000,2147483647,2147483647,0,"Regularization and Bias/Variance (11 min)",0,"video","none",1,0,1366491378
+81,-1,10368000,2147483647,2147483647,0,"Learning Curves (12 min)",0,"video","none",1,0,1366491378
+82,-1,10368000,2147483647,2147483647,0,"Deciding What to Do Next Revisited (7 min)",0,"video","none",1,0,1366491378
+83,-1,10368000,2147483647,2147483647,0,"Prioritizing What to Work On (10 min)",0,"video","none",1,0,1366491378
+84,-1,10368000,2147483647,2147483647,0,"Error Analysis (13 min)",0,"video","none",1,0,1366491378
+85,-1,10368000,2147483640,2147483640,0,"Error Metrics for Skewed Classes (12 min)",0,"video","none",1,0,1387005057
+86,-1,10368000,2147483647,2147483647,0,"Trading Off Precision and Recall (14 min)",0,"video","none",1,0,1366491378
+87,-1,10368000,2147483647,2147483647,0,"Data For Machine Learning (11 min)",0,"video","none",1,0,1366491378
+88,-1,10368000,2147483647,2147483647,0,"Optimization Objective (15 min)",0,"video","none",1,0,1366491378
+89,-1,10368000,2147483647,2147483647,0,"Large Margin Intuition (11 min)",0,"video","none",1,0,1366491378
+90,-1,10368000,2147483647,2147483647,0,"Mathematics Behind Large Margin Classification (Optional) (20 min)",0,"video","none",1,0,1366491378
+91,-1,10368000,2147483640,2147483640,0,"Kernels I (16 min)",0,"video","none",1,0,1386626170
+92,-1,10368000,2147483647,2147483647,0,"Kernels II (16 min)",0,"video","none",1,0,1366491379
+93,-1,10368000,2147483647,2147483647,0,"Using An SVM (21 min)",0,"video","none",1,0,1366491379
+94,-1,10368000,2147483647,2147483647,0,"Unsupervised Learning: Introduction (3 min)",0,"video","none",1,0,1366491379
+95,-1,10368000,2147483647,2147483647,0,"K-Means Algorithm (13 min)",0,"video","none",1,0,1366491379
+96,-1,10368000,2147483647,2147483647,0,"Optimization Objective (7 min)",0,"video","none",1,0,1366491379
+97,-1,10368000,2147483647,2147483647,0,"Random Initialization (8 min)",0,"video","none",1,0,1366491379
+98,-1,10368000,2147483647,2147483647,0,"Choosing the Number of Clusters (8 min)",0,"video","none",1,0,1366491379
+99,-1,10368000,2147483647,2147483647,0,"Motivation I: Data Compression (10 min)",0,"video","none",1,0,1366491379
+100,-1,10368000,2147483647,2147483647,0,"Motivation II: Visualization (6 min)",0,"video","none",1,0,1366491379
+101,-1,10368000,2147483647,2147483647,0,"Principal Component Analysis Problem Formulation (9 min)",0,"video","none",1,0,1366491379
+102,-1,10368000,2147483647,2147483647,0,"Principal Component Analysis Algorithm (15 min)",0,"video","none",1,0,1366491379
+103,-1,10368000,2147483647,2147483647,0,"Choosing the Number of Principal Components (11 min)",0,"video","none",1,0,1366491379
+104,-1,10368000,2147483647,2147483647,0,"Reconstruction from Compressed Representation (4 min)",0,"video","none",1,0,1366491379
+105,-1,10368000,2147483647,2147483647,0,"Advice for Applying PCA (13 min)",0,"video","none",1,0,1366491379
+106,-1,10368000,2147483647,2147483647,0,"Problem Motivation (8 min)",0,"video","none",1,0,1366491379
+107,-1,10368000,2147483647,2147483647,0,"Gaussian Distribution (10 min)",0,"video","none",1,0,1366491379
+108,-1,10368000,2147483647,2147483647,0,"Algorithm (12 min)",0,"video","none",1,0,1366491379
+109,-1,10368000,2147483647,2147483647,0,"Developing and Evaluating an Anomaly Detection System (13 min)",0,"video","none",1,0,1366491379
+110,-1,10368000,2147483647,2147483647,0,"Anomaly Detection vs. Supervised Learning (8 min)",0,"video","none",1,0,1366491379
+111,-1,10368000,2147483647,2147483647,0,"Choosing What Features to Use (12 min)",0,"video","none",1,0,1366491379
+112,-1,10368000,2147483647,2147483647,0,"Multivariate Gaussian Distribution (Optional) (14 min)",0,"video","none",1,0,1366491379
+113,-1,10368000,2147483640,2147483640,0,"Anomaly Detection using the Multivariate Gaussian Distribution (Optional) (14 min)",0,"video","none",1,0,1387333473
+114,-1,10368000,2147483647,2147483647,0,"Problem Formulation (8 min)",0,"video","none",1,0,1366491379
+115,-1,10368000,2147483647,2147483647,0,"Content Based Recommendations (15 min)",0,"video","none",1,0,1366491379
+116,-1,10368000,2147483647,2147483647,0,"Collaborative Filtering (10 min)",0,"video","none",1,0,1366491379
+117,-1,10368000,2147483647,2147483647,0,"Collaborative Filtering Algorithm (9 min)",0,"video","none",1,0,1366491380
+118,-1,10368000,2147483647,2147483647,0,"Vectorization: Low Rank Matrix Factorization (8 min)",0,"video","none",1,0,1366491380
+119,-1,10368000,2147483647,2147483647,0,"Implementational Detail: Mean Normalization (9 min)",0,"video","none",1,0,1366491380
+120,-1,10368000,2147483647,2147483647,0,"Learning With Large Datasets (6 min)",0,"video","none",1,0,1366491380
+121,-1,10368000,2147483647,2147483647,0,"Stochastic Gradient Descent (13 min)",0,"video","none",1,0,1366491380
+122,-1,10368000,2147483647,2147483647,0,"Mini-Batch Gradient Descent (6 min)",0,"video","none",1,0,1366491380
+123,-1,10368000,2147483647,2147483647,0,"Stochastic Gradient Descent Convergence (12 min)",0,"video","none",1,0,1366491380
+124,-1,10368000,2147483647,2147483647,0,"Online Learning (13 min)",0,"video","none",1,0,1366491380
+125,-1,10368000,2147483647,2147483647,0,"Map Reduce and Data Parallelism (14 min)",0,"video","none",1,0,1366491380
+126,-1,10368000,2147483647,2147483647,0,"Problem Description and Pipeline (7 min)",0,"video","none",1,0,1366491380
+127,-1,10368000,2147483647,2147483647,0,"Sliding Windows (15 min)",0,"video","none",1,0,1366491380
+128,-1,10368000,2147483647,2147483647,0,"Getting Lots of Data and Artificial Data (16 min)",0,"video","none",1,0,1366491380
+129,-1,10368000,2147483647,2147483647,0,"Ceiling Analysis: What Part of the Pipeline to Work on Next (14 min)",0,"video","none",1,0,1366491380
+130,-1,10368000,2147483647,2147483647,0,"Summary and Thank You (5 min)",0,"video","none",1,0,1366491380
+131,-1,0,2147483647,2147483647,0,"Choosing What Features to Use (12 min)",0,"video","none",1,1,1366491380
+132,-1,1385366400,1386575940,1389599940,100,"X. Advice for Applying Machine Learning",0,"quiz","none",1,0,1385169141
+133,-1,1385366400,1386575940,1389599940,100,"XI. Machine Learning System Design",0,"quiz","none",1,0,1382980010
+134,-1,1385971200,1387180740,1389599940,100,"XII. Support Vector Machines",0,"quiz","none",1,0,1385169696
+135,-1,1386576000,1387785540,1389599940,100,"XIII. Clustering",0,"quiz","none",1,0,1382980046
+136,-1,1386576000,1387785540,1389599940,100,"XIV. Principal Component Analysis",0,"quiz","none",1,0,1382980057
+137,-1,1387180800,1388390340,1389599940,100,"XV. Anomaly Detection",0,"quiz","none",1,0,1382980079
+138,-1,1387180800,1388390340,1389599940,100,"XVI. Recommender Systems",0,"quiz","none",1,0,1385169358
+139,-1,1387785600,1388995140,1389599940,100,"XVII. Large Scale Machine Learning",0,"quiz","none",1,0,1382980104
+140,-1,1387785600,1388995140,1389599940,100,"XVIII. Application: Photo OCR",0,"quiz","none",1,0,1382980104
+141,-1,NULL,1903852860,1903852860,1,"Machine Learning Survey",0,"survey","none",1,0,1366491380
+142,-1,NULL,1903852860,1903852860,1,"Pre Course Survey Template",0,"survey","none",1,0,1366491381
+143,-1,NULL,1903852860,1903852860,1,"Post Course Survey Template",0,"survey","none",1,0,1366491381
+144,-1,NULL,1350517153,1351726753,100,"",0,"exam","none",1,1,1366491381
+145,1,15811260,2147483647,2147483647,10,"Welcome (7 min)",3600,"video","none",1,0,1366491375
+146,2,1337072460,1338278340,1338883140,3,"What is Machine Learning? (7 min)",0,"video","none",1,0,1367894429
+147,3,1337072460,1338278340,1338883140,3,"Supervised Learning (12 min)",0,"video","none",1,0,1366491375
+148,4,1342515660,1343721540,1344326340,3,"Unsupervised Learning (14 min)",0,"video","none",1,0,1366491375
+149,5,1337072460,1338278340,1338883140,3,"Model Representation (8 min)",0,"video","none",1,0,1366491375
+150,6,1337072460,1338278340,1338883140,3,"Cost Function (8 min)",0,"video","none",1,0,1366491375
+151,7,1337068800,1338278340,1338883140,3,"Cost Function - Intuition I (11 min)",0,"video","none",1,0,1366491375
+152,8,15811200,2147483647,2147483647,10,"Cost Function - Intuition II (9 min)",3600,"video","none",1,0,1366491375
+153,9,1337072460,1338278340,1338883140,3,"Gradient Descent For Linear Regression (10 min)",0,"video","none",1,0,1366491375
+154,10,1337072460,1338278340,1338883140,3,"Gradient Descent Intuition (12 min)",0,"video","none",1,0,1366491375
+155,11,1337068800,1338278340,1338883140,3,"Gradient Descent (11 min)",0,"video","none",1,0,1366491375
+156,12,15811260,2147483647,2147483647,10,"What's Next (6 min)",3600,"video","none",1,0,1366491375
+157,13,1326761460,1327366260,1328575860,10,"New Quiz",3600,"quiz","none",1,1,1366491375
+158,14,0,1327910399,1328515199,0,"I. Introduction",0,"quiz","none",1,1,1366491375
+159,15,1326789300,1327910399,1328515199,100,"I. Introduction",0,"quiz","none",1,1,1366491375
+160,16,1381762800,1383551940,1389599940,100,"I. Introduction",0,"quiz","none",1,0,1382979708
+161,17,1381762800,1383551940,1389599940,100,"II. Linear regression with one variable",0,"quiz","none",1,0,1382979723
+162,18,1320134460,1320742860,1320742860,100,"I. Introduction -- Amaas Test",0,"quiz","none",1,1,1366491376
+163,19,1333609200,1334559600,1334645999,100,"II. Linear regression with one variable",0,"quiz","none",1,1,1366491376
+164,20,1381762800,1383551940,1389599940,100,"III. Linear Algebra",0,"quiz","none",1,0,1382979788
+165,21,10368000,2147483647,2147483647,0,"Matrices and Vectors (9 min)",0,"video","none",1,0,1366491376
+166,22,10368000,2147483647,2147483647,0,"Addition and Scalar Multiplication (7 min)",0,"video","none",1,0,1366491376
+167,23,10368000,2147483647,2147483647,0,"Matrix Vector Multiplication (14 min)",0,"video","none",1,0,1366491376
+168,24,10368000,2147483647,2147483647,0,"Matrix Matrix Multiplication (11 min)",0,"video","none",1,0,1366491376
+169,25,10368000,2147483647,2147483647,0,"Matrix Multiplication Properties (9 min)",0,"video","none",1,0,1366491376
+170,26,10368000,2147483647,2147483647,0,"Inverse and Transpose (11 min)",0,"video","none",1,0,1366491376
+171,27,10368000,2147483640,2147483640,0,"Multiple Features (8 min)",0,"video","none",1,0,1384278897
+172,28,10368000,2147483647,2147483647,0,"Gradient Descent for Multiple Variables (5 min)",0,"video","none",1,0,1366491376
+173,29,10368000,2147483647,2147483647,0,"Gradient Descent in Practice I - Feature Scaling (9 min)",0,"video","none",1,0,1366491376
+174,30,10368000,2147483647,2147483647,0,"Gradient Descent in Practice II - Learning Rate (9 min)",0,"video","none",1,0,1366491376
+175,31,10368000,2147483647,2147483647,0,"Features and Polynomial Regression (8 min)",0,"video","none",1,0,1366491376
+176,32,10368000,2147483647,2147483647,0,"Normal Equation (16 min)",0,"video","none",1,0,1366491376
+177,33,10368000,2147483647,2147483647,0,"Normal Equation Noninvertibility (Optional) (6 min)",0,"video","none",1,0,1366491376
+178,34,10368000,2147483647,2147483647,0,"Basic Operations (14 min)",0,"video","none",1,0,1366491376
+179,35,10368000,2147483647,2147483647,0,"Moving Data Around (16 min)",0,"video","none",1,0,1366491376
+180,36,10368000,2147483647,2147483647,0,"Computing on Data (13 min)",0,"video","none",1,0,1366491376
+181,37,10368000,2147483647,2147483647,0,"Plotting Data (10 min)",0,"video","none",1,0,1366491376
+182,38,10368000,2147483647,2147483647,0,"Vectorization (14 min)",0,"video","none",1,0,1366491376
+183,39,10368000,2147483647,2147483647,0,"Control Statements: for, while, if statements (13 min)",0,"video","none",1,0,1366491376
+184,40,10368000,2147483647,2147483647,0,"Working on and Submitting Programming Exercises (4 min)",0,"video","none",1,0,1366491377
+185,41,10368000,2147483647,2147483647,0,"Classification (8 min)",0,"video","none",1,0,1366491377
+186,42,10368000,2147483647,2147483647,0,"Hypothesis Representation (7 min)",0,"video","none",1,0,1366491377
+187,43,10368000,2147483647,2147483647,0,"Decision Boundary (15 min)",0,"video","none",1,0,1366491377
+188,44,10368000,2147483647,2147483647,0,"Simplified Cost Function and Gradient Descent (10 min)",0,"video","none",1,0,1366491377
+189,45,10368000,2147483647,2147483647,0,"Advanced Optimization (14 min)",0,"video","none",1,0,1366491377
+190,46,10368000,2147483647,2147483647,0,"Multiclass Classification: One-vs-all (6 min)",0,"video","none",1,0,1366491377
+191,47,10368000,2147483647,2147483647,0,"The Problem of Overfitting (10 min)",0,"video","none",1,0,1366491377
+192,48,10368000,2147483647,2147483647,0,"Cost Function (10 min)",0,"video","none",1,0,1366491377
+193,49,10368000,2147483647,2147483647,0,"Regularized Linear Regression (11 min)",0,"video","none",1,0,1366491377
+194,50,10368000,2147483647,2147483647,0,"Regularized Logistic Regression (9 min)",0,"video","none",1,0,1366491377
+195,51,10368000,2147483647,2147483647,0,"Non-linear Hypotheses (10 min)",0,"video","none",1,0,1366491377
+196,52,10368000,2147483647,2147483647,0,"Neurons and the Brain (8 min)",0,"video","none",1,0,1366491377
+197,53,10368000,2147483647,2147483647,0,"Model Representation I (12 min)",0,"video","none",1,0,1366491377
+198,54,10368000,2147483640,2147483640,0,"Model Representation II (12 min)",0,"video","none",1,0,1384813222
+199,55,10368000,2147483647,2147483647,0,"Examples and Intuitions I (7 min)",0,"video","none",1,0,1366491377
+200,56,10368000,2147483647,2147483647,0,"Examples and Intuitions II (10 min)",0,"video","none",1,0,1366491377
+201,57,10368000,2147483647,2147483647,0,"Multiclass Classification (4 min)",0,"video","none",1,0,1366491377
+202,58,10368000,2147483647,2147483647,0,"Cost Function (7 min)",0,"video","none",1,0,1366491377
+203,59,10368000,2147483647,2147483647,0,"Backpropagation Algorithm (12 min)",0,"video","none",1,0,1366491377
+204,60,0,2147483640,2147483640,0,"Backpropagation Intuition (13 min)",0,"video","none",1,0,1366491377
+205,61,10368000,2147483647,2147483647,0,"Implementation Note: Unrolling Parameters (8 min)",0,"video","none",1,0,1366491377
+206,62,10368000,2147483647,2147483647,0,"Gradient Checking (12 min)",0,"video","none",1,0,1366491377
+207,63,10368000,2147483647,2147483647,0,"Random Initialization (7 min)",0,"video","none",1,0,1366491377
+208,64,10368000,2147483647,2147483647,0,"Putting It Together (14 min)",0,"video","none",1,0,1366491377
+209,65,10368000,2147483647,2147483647,0,"Autonomous Driving (7 min)",0,"video","none",1,0,1366491377
+210,66,1320130800,1320739200,1320739200,100,"III. Linear Algebra",0,"quiz","none",1,1,1366491377
+211,67,1381762800,1384156740,1389599940,100,"IV. Linear Regression with Multiple Variables",0,"quiz","none",1,0,1383950035
+212,68,1381762800,1384156740,1389599940,100,"V. Octave Tutorial",0,"quiz","none",1,0,1382979836
+213,69,1383552000,1384761540,1389599940,100,"VI. Logistic Regression",0,"quiz","none",1,0,1382979856
+214,70,1383552000,1384761540,1389599940,100,"VII. Regularization",0,"quiz","none",1,0,1382979866
+215,71,1384156800,1385366340,1389599940,100,"VIII. Neural Networks: Representation",0,"quiz","none",1,0,1382979958
+216,72,10368000,2147483647,2147483647,0,"Cost Function (11 min)",0,"video","none",1,0,1366491378
+217,73,1334960101,1335564901,1336774501,100,"New Quiz",0,"quiz","none",1,1,1366491378
+218,74,1334960160,1335564960,1336774560,100,"New asdfasdfasdfas",0,"homework","none",1,1,1366491378
+219,75,1384761600,1385971140,1389599940,100,"IX. Neural Networks: Learning",0,"quiz","none",1,0,1382979978
+220,76,10368000,2147483647,2147483647,0,"Deciding What to Try Next (6 min)",0,"video","none",1,0,1366491378
+221,77,10368000,2147483647,2147483647,0,"Evaluating a Hypothesis (8 min)",0,"video","none",1,0,1366491378
+222,78,10368000,2147483647,2147483647,0,"Model Selection and Train/Validation/Test Sets (12 min)",0,"video","none",1,0,1366491378
+223,79,10368000,2147483647,2147483647,0,"Diagnosing Bias vs. Variance (8 min)",0,"video","none",1,0,1366491378
+224,80,10368000,2147483647,2147483647,0,"Regularization and Bias/Variance (11 min)",0,"video","none",1,0,1366491378
+225,81,10368000,2147483647,2147483647,0,"Learning Curves (12 min)",0,"video","none",1,0,1366491378
+226,82,10368000,2147483647,2147483647,0,"Deciding What to Do Next Revisited (7 min)",0,"video","none",1,0,1366491378
+227,83,10368000,2147483647,2147483647,0,"Prioritizing What to Work On (10 min)",0,"video","none",1,0,1366491378
+228,84,10368000,2147483647,2147483647,0,"Error Analysis (13 min)",0,"video","none",1,0,1366491378
+229,85,10368000,2147483640,2147483640,0,"Error Metrics for Skewed Classes (12 min)",0,"video","none",1,0,1387005057
+230,86,10368000,2147483647,2147483647,0,"Trading Off Precision and Recall (14 min)",0,"video","none",1,0,1366491378
+231,87,10368000,2147483647,2147483647,0,"Data For Machine Learning (11 min)",0,"video","none",1,0,1366491378
+232,88,10368000,2147483647,2147483647,0,"Optimization Objective (15 min)",0,"video","none",1,0,1366491378
+233,89,10368000,2147483647,2147483647,0,"Large Margin Intuition (11 min)",0,"video","none",1,0,1366491378
+234,90,10368000,2147483647,2147483647,0,"Mathematics Behind Large Margin Classification (Optional) (20 min)",0,"video","none",1,0,1366491378
+235,91,10368000,2147483640,2147483640,0,"Kernels I (16 min)",0,"video","none",1,0,1386626170
+236,92,10368000,2147483647,2147483647,0,"Kernels II (16 min)",0,"video","none",1,0,1366491379
+237,93,10368000,2147483647,2147483647,0,"Using An SVM (21 min)",0,"video","none",1,0,1366491379
+238,94,10368000,2147483647,2147483647,0,"Unsupervised Learning: Introduction (3 min)",0,"video","none",1,0,1366491379
+239,95,10368000,2147483647,2147483647,0,"K-Means Algorithm (13 min)",0,"video","none",1,0,1366491379
+240,96,10368000,2147483647,2147483647,0,"Optimization Objective (7 min)",0,"video","none",1,0,1366491379
+241,97,10368000,2147483647,2147483647,0,"Random Initialization (8 min)",0,"video","none",1,0,1366491379
+242,98,10368000,2147483647,2147483647,0,"Choosing the Number of Clusters (8 min)",0,"video","none",1,0,1366491379
+243,99,10368000,2147483647,2147483647,0,"Motivation I: Data Compression (10 min)",0,"video","none",1,0,1366491379
+244,100,10368000,2147483647,2147483647,0,"Motivation II: Visualization (6 min)",0,"video","none",1,0,1366491379
+245,101,10368000,2147483647,2147483647,0,"Principal Component Analysis Problem Formulation (9 min)",0,"video","none",1,0,1366491379
+246,102,10368000,2147483647,2147483647,0,"Principal Component Analysis Algorithm (15 min)",0,"video","none",1,0,1366491379
+247,103,10368000,2147483647,2147483647,0,"Choosing the Number of Principal Components (11 min)",0,"video","none",1,0,1366491379
+248,104,10368000,2147483647,2147483647,0,"Reconstruction from Compressed Representation (4 min)",0,"video","none",1,0,1366491379
+249,105,10368000,2147483647,2147483647,0,"Advice for Applying PCA (13 min)",0,"video","none",1,0,1366491379
+250,106,10368000,2147483647,2147483647,0,"Problem Motivation (8 min)",0,"video","none",1,0,1366491379
+251,107,10368000,2147483647,2147483647,0,"Gaussian Distribution (10 min)",0,"video","none",1,0,1366491379
+252,108,10368000,2147483647,2147483647,0,"Algorithm (12 min)",0,"video","none",1,0,1366491379
+253,109,10368000,2147483647,2147483647,0,"Developing and Evaluating an Anomaly Detection System (13 min)",0,"video","none",1,0,1366491379
+254,110,10368000,2147483647,2147483647,0,"Anomaly Detection vs. Supervised Learning (8 min)",0,"video","none",1,0,1366491379
+255,111,10368000,2147483647,2147483647,0,"Choosing What Features to Use (12 min)",0,"video","none",1,0,1366491379
+256,112,10368000,2147483647,2147483647,0,"Multivariate Gaussian Distribution (Optional) (14 min)",0,"video","none",1,0,1366491379
+257,113,10368000,2147483640,2147483640,0,"Anomaly Detection using the Multivariate Gaussian Distribution (Optional) (14 min)",0,"video","none",1,0,1387333473
+258,114,10368000,2147483647,2147483647,0,"Problem Formulation (8 min)",0,"video","none",1,0,1366491379
+259,115,10368000,2147483647,2147483647,0,"Content Based Recommendations (15 min)",0,"video","none",1,0,1366491379
+260,116,10368000,2147483647,2147483647,0,"Collaborative Filtering (10 min)",0,"video","none",1,0,1366491379
+261,117,10368000,2147483647,2147483647,0,"Collaborative Filtering Algorithm (9 min)",0,"video","none",1,0,1366491380
+262,118,10368000,2147483647,2147483647,0,"Vectorization: Low Rank Matrix Factorization (8 min)",0,"video","none",1,0,1366491380
+263,119,10368000,2147483647,2147483647,0,"Implementational Detail: Mean Normalization (9 min)",0,"video","none",1,0,1366491380
+264,120,10368000,2147483647,2147483647,0,"Learning With Large Datasets (6 min)",0,"video","none",1,0,1366491380
+265,121,10368000,2147483647,2147483647,0,"Stochastic Gradient Descent (13 min)",0,"video","none",1,0,1366491380
+266,122,10368000,2147483647,2147483647,0,"Mini-Batch Gradient Descent (6 min)",0,"video","none",1,0,1366491380
+267,123,10368000,2147483647,2147483647,0,"Stochastic Gradient Descent Convergence (12 min)",0,"video","none",1,0,1366491380
+268,124,10368000,2147483647,2147483647,0,"Online Learning (13 min)",0,"video","none",1,0,1366491380
+269,125,10368000,2147483647,2147483647,0,"Map Reduce and Data Parallelism (14 min)",0,"video","none",1,0,1366491380
+270,126,10368000,2147483647,2147483647,0,"Problem Description and Pipeline (7 min)",0,"video","none",1,0,1366491380
+271,127,10368000,2147483647,2147483647,0,"Sliding Windows (15 min)",0,"video","none",1,0,1366491380
+272,128,10368000,2147483647,2147483647,0,"Getting Lots of Data and Artificial Data (16 min)",0,"video","none",1,0,1366491380
+273,129,10368000,2147483647,2147483647,0,"Ceiling Analysis: What Part of the Pipeline to Work on Next (14 min)",0,"video","none",1,0,1366491380
+274,130,10368000,2147483647,2147483647,0,"Summary and Thank You (5 min)",0,"video","none",1,0,1366491380
+275,131,0,2147483647,2147483647,0,"Choosing What Features to Use (12 min)",0,"video","none",1,1,1366491380
+276,132,1385366400,1386575940,1389599940,100,"X. Advice for Applying Machine Learning",0,"quiz","none",1,0,1385169141
+277,133,1385366400,1386575940,1389599940,100,"XI. Machine Learning System Design",0,"quiz","none",1,0,1382980010
+278,134,1385971200,1387180740,1389599940,100,"XII. Support Vector Machines",0,"quiz","none",1,0,1385169696
+279,135,1386576000,1387785540,1389599940,100,"XIII. Clustering",0,"quiz","none",1,0,1382980046
+280,136,1386576000,1387785540,1389599940,100,"XIV. Principal Component Analysis",0,"quiz","none",1,0,1382980057
+281,137,1387180800,1388390340,1389599940,100,"XV. Anomaly Detection",0,"quiz","none",1,0,1382980079
+282,138,1387180800,1388390340,1389599940,100,"XVI. Recommender Systems",0,"quiz","none",1,0,1385169358
+283,139,1387785600,1388995140,1389599940,100,"XVII. Large Scale Machine Learning",0,"quiz","none",1,0,1382980104
+284,140,1387785600,1388995140,1389599940,100,"XVIII. Application: Photo OCR",0,"quiz","none",1,0,1382980104
+285,141,1349643060,1904371260,1904371260,1,"Machine Learning Survey",0,"survey","none",1,0,1381270482
+286,142,1352224320,1904371260,1904371260,1,"Pre Course Survey Template",0,"survey","none",1,0,1381270482
+287,143,1352228040,1904371260,1904371260,1,"Post Course Survey Template",0,"survey","none",1,0,1381270482
+288,144,1349912353,1350517153,1351726753,100,"",0,"exam","none",1,1,1366491381
+289,-1,NULL,1367971967,1369181567,100,"",0,"quiz","none",1,1,0
+290,289,NULL,1367971967,1369181567,100,"",0,"quiz","none",1,1,0
+291,-1,1381759200,1388995260,1388995260,1,"Entrance Survey",0,"survey","none",1,0,1381428006
+292,291,1381759200,1388995260,1388995260,1,"Entrance Survey",0,"survey","none",1,0,1381428006
+293,-1,1388995140,1389599940,1389686340,1,"Post Course Survey",0,"survey","none",1,0,1387239045
+294,293,1388995140,1389599940,1389686340,1,"Post Course Survey",0,"survey","none",1,0,1387239045
+295,-1,NULL,1374796414,1376006014,100,"",0,"quiz","none",1,1,0
+296,295,NULL,1374796414,1376006014,100,"",0,"quiz","none",1,1,0
+297,-1,NULL,1375890619,1377100219,100,"",0,"quiz","none",1,0,0
+298,297,518400,1376409000,1377618600,100,"Final Post Course Survey",0,"quiz","none",1,0,1381270482
+299,-1,NULL,1375906060,1377115660,100,"",0,"quiz","none",1,0,0
+300,299,NULL,1376424460,1377634060,1,"Getting to know you",0,"quiz","none",1,0,1381270482
+301,-1,NULL,1375906497,1377116097,100,"",0,"quiz","none",1,1,0
+302,301,NULL,1375906497,1377116097,100,"",0,"quiz","none",1,1,0
+303,-1,NULL,1375906510,1377116110,100,"",0,"quiz","none",1,0,0
+304,303,518400,1376424900,1377634500,100,"Welcome Survey Template (August 2013)",0,"quiz","none",1,0,1381270482
+305,-1,NULL,1375983027,1377192627,100,"",0,"quiz","none",1,0,0
+306,305,518400,1376501400,1377711000,1,"Post-Course Survey Template (August 2013)",0,"survey","none",1,0,1381270482
+307,-1,NULL,1378147607,1379357207,100,"",0,"quiz","none",1,1,0
+308,307,NULL,1378147608,1379357208,100,"",0,"quiz","none",1,1,0
+309,-1,NULL,1384286753,1385496353,100,"",0,"quiz","none",1,0,0
+310,309,0,1384286700,1385496300,100,"Peer Discussion Quiz Support Vector Machines",0,"quiz","none",1,0,1383682339
