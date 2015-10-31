@@ -1,5 +1,5 @@
 #!/usr/bin/env python
-# md5: 84f271210ebb328042f2f929c27e37c0
+# md5: 6a153f4264440ad6b72ef56258965664
 # coding: utf-8
 
 try:
@@ -303,7 +303,7 @@ class DataException(Exception):
     num_data_exceptions += 1
     Exception.__init__(self, message)
 
-def extractAllEvents(frame):
+def extractAllEvents(frame, ignore_errors=False):
   output = []
   prev_timestamp = None
   prev_curr_time = None
@@ -324,6 +324,8 @@ def extractAllEvents(frame):
     if row['event_type'] == 'ratechange':
       playback_rate = row['playback_rate']
       if isnan(playback_rate) or not 0.75 <= playback_rate <= 2.0:
+        if ignore_errors:
+          continue
         raise DataException('incorrect playback rate - ' + str(playback_rate))
       #assert not isnan(playback_rate) and 0.75 <= playback_rate <= 2.0, 'playback_rate is ' + str(playback_rate)
       prev_timestamp = row['event_timestamp']
@@ -343,6 +345,8 @@ def extractAllEvents(frame):
     if row['event_type'] == 'seeked':
       #assert prev_timestamp != None
       if prev_timestamp == None:
+        if ignore_errors:
+          continue
         raise DataException('prev_timestamp is None - did not have start event prior to seeked')
       #if prev_timestamp == None: # did not have any start event for user, cannot determine where the seek started! discard it.
       #  prev_timestamp = row['event_timestamp']
@@ -412,7 +416,9 @@ def extractSeekEvents(frame):
         seconds_video_played_since_last_event = time_since_last_event_seconds * playback_rate
         assert seconds_video_played_since_last_event >= 0, 'time since last event is ' + str(time_since_last_event_seconds) + ' playback rate is ' + str(playback_rate)
         seek_source = prev_curr_time + seconds_video_played_since_last_event
-      seekEvent = SeekEvent(row['event_timestamp'], seek_source, row['curr_time'], paused)
+      seekEvent = SeekEvent(row['event_timestamp'], seek_source, row['curr_time'], paused, row['anon_username'])
+      #print seekEvent
+      #break
       output.append(seekEvent)
       prev_timestamp = row['event_timestamp']
       prev_curr_time = row['curr_time']
@@ -628,14 +634,14 @@ def extractSeekEventsForUserInLecture(lecture_id, user_id, filter_func=None):
     return all_events
   return filter_func(all_events, lecture_id, user_id)
     
-def extractAllEventsForUserInLecture(lecture_id, user_id, filter_func=None):
+def extractAllEventsForUserInLecture(lecture_id, user_id, filter_func=None, ignore_errors=False):
   frame = getFrameForLectureUser(lecture_id, user_id)
   if type(frame) == type(None):
     return None
   if frame.empty:
     return None
   frame = frame.sort('event_timestamp')
-  all_events = extractAllEvents(frame)
+  all_events = extractAllEvents(frame, ignore_errors=ignore_errors)
   if filter_func == None:
     return all_events
   return filter_func(all_events, lecture_id, user_id)
@@ -856,7 +862,8 @@ def groupSeekEventsAsSeekChains(seek_events):
         current_seek_chain.append(seek_event)
         prev_seek_timestamp = seek_event.timestamp
   if len(current_seek_chain) > 0:
-    output.append(SeekChain(current_seek_chain))
+    seek_chain = SeekChain(current_seek_chain)
+    output.append(seek_chain)
     current_seek_chain = []
   return output
 

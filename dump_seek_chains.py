@@ -1,5 +1,5 @@
 #!/usr/bin/env python
-# md5: d016b3c817ed0c05717c9a3c001bf063
+# md5: 164bd37634eb4feb071d7c90c05a112c
 # coding: utf-8
 
 #from coursera_lib_common import parseOptions
@@ -16,23 +16,23 @@ import os
 
 
 for lecture_id in vid.video_lengths.keys():
-  pfile = 'seek_chains_' + str(lecture_id) + '.pickle'
-  jfile = 'seek_chains_' + str(lecture_id) + '.json'
-  if not os.path.exists(jfile):
+  pfile = '/lfs/local/0/geza/new_seek_chains/seek_chains_' + str(lecture_id) + '.pickle'
+  jfile = '/lfs/local/0/geza/new_seek_chains/seek_chains_' + str(lecture_id) + '.json'
+  if not os.path.exists(pfile):
     print lecture_id
     seek_chains = getSeekChains(lecture_id)
     pickle.dump(seek_chains, open(pfile, 'w'), pickle.HIGHEST_PROTOCOL)
-    json.dump(jsonpickle.encode(seek_chains), open(jfile, 'w'))
+    #json.dump(jsonpickle.encode(seek_chains), open(jfile, 'w'))
 
 
-if not os.path.exists('video_to_seek_chains.pickle'):
+if not os.path.exists('/lfs/local/0/geza/new_seek_chains/video_to_seek_chains.pickle'):
   video_to_seek_chains = {}
   for lecture_id in vid.video_lengths.keys():
     print lecture_id
-    pfile = 'seek_chains_' + str(lecture_id) + '.pickle'
+    pfile = '/lfs/local/0/geza/new_seek_chains/seek_chains_' + str(lecture_id) + '.pickle'
     seek_chains = pickle.load(open(pfile))
     video_to_seek_chains[lecture_id] = seek_chains
   print 'dumping'
-  pickle.dump(video_to_seek_chains, open('video_to_seek_chains.pickle', 'w'), pickle.HIGHEST_PROTOCOL)
-  json.dump(jsonpickle.encode(video_to_seek_chains), open('video_to_see_chains.json', 'w'))
+  pickle.dump(video_to_seek_chains, open('/lfs/local/0/geza/new_seek_chains/video_to_seek_chains.pickle', 'w'), pickle.HIGHEST_PROTOCOL)
+  #json.dump(jsonpickle.encode(video_to_seek_chains), open('/lfs/local/geza/0/new_seek_chains/video_to_see_chains.json', 'w'))
 

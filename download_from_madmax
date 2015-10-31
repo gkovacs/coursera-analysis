@@ -1,0 +1,1 @@
+rsync -avzP --exclude .ipynb_checkpoints --exclude .git geza@madmax.stanford.edu:/afs/cs.stanford.edu/u/geza/coursera-analysis/ ./
